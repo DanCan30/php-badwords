@@ -19,30 +19,40 @@
 </head>
 <body>
     <h1>PHP Badwords</h1>
-    <p>
-        <?php
-            echo $text;
-        ?>
-        <span>
 
+    <main class="container">
+        <p>
             <?php
-                echo strlen($text);
+                echo $text;
             ?>
-        </span>
-    </p>
-    
-    <p>
-        <?php
-            echo $censoredText;
-        ?>
+            <div>
+                Length: 
+                <span>
+
+                    <?php
+                        echo strlen($text);
+                    ?>
+                </span>
+            </div>
+        </p>
         
-        <span>
-
+        <p>
             <?php
-                echo strlen($censoredText);
+                echo $censoredText;
             ?>
-        </span>
-    </p>
+            
+            <div>
+                Length: 
+                <span>
+
+                    <?php
+                        echo strlen($censoredText);
+                    ?>
+                </span>
+            </div>
+        </p>
+    </main>
+    
 
 </body>
 </html>
